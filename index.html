@@ -54,24 +54,24 @@
     </header>
     <main>
         <!-- start main SEction-->
-        <section class="lg:px-12 mx-auto p-5 flex">
-            <div class="w-[70%] grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <section class="lg:px-12 mx-auto p-5 md:flex">
+            <div class="w-full md:w-[70%] grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- 1st Cart -->
                 <div class="card bg-base-100 shadow-lg bg-[#FBBCED] a">
                     <figure class="px-10 pt-10">
                       <img src="./images/triangle.png" alt="triangle" class="rounded-xl w-full h-[200px]" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Triangle</h2>
+                      <h2 id="triangle-name" class="card-title">Triangle</h2>
                       <p>Area (A) = 0.5 &lowast; b &lowast; h</p>
                       <div class="card-actions justify-center">
                         <div class="flex gap-2 ">
-                            <input class="w-[95px] pl-2 rounded-md" type="text" placeholder="b">
+                            <input id="triangle-1st-field" class="w-[95px] pl-2 rounded-md" type="text" placeholder="b">
                             <p>cm</p>
-                            <input class="w-[95px] pl-2 rounded-md" type="text" placeholder="h">
+                            <input id="triangle-2nd-field" class="w-[95px] pl-2 rounded-md" type="text" placeholder="h">
                             <p>cm</p>
                         </div>
-                        <button class="mt-3 btn w-[200px]  bg-[#1090D8] hover:bg-[#0a4c74]">Calculate</button>
+                        <button id="first-cart-btn" class="mt-3 btn w-[200px]  bg-[#1090D8] hover:bg-[#0a4c74]">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -81,16 +81,16 @@
                       <img src="./images/rectangle.png" alt="Rectangle" class="rounded-xl w-full h-[200px]" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Rectangle</h2>
+                      <h2 id="rectangle-name" class="card-title">Rectangle</h2>
                       <p>Area (A) = w &lowast; i</p>
                       <div class="card-actions justify-center">
                         <div class="flex gap-2 ">
-                            <input class="w-[95px] pl-2 rounded-md bg-[#F1F1F1;]" type="text" placeholder="w">
+                            <input id="rectangle-1st-field" class="w-[95px] pl-2 rounded-md bg-[#F1F1F1;]" type="text" placeholder="w">
                             <p>cm</p>
-                            <input class="w-[95px] pl-2 rounded-md bg-[#F1F1F1;]" type="text" placeholder="i">
+                            <input id="rectangle-2nd-field" class="w-[95px] pl-2 rounded-md bg-[#F1F1F1;]" type="text" placeholder="i">
                             <p>cm</p>
                         </div>
-                        <button class="mt-3 btn w-[200px]  bg-[#1090D8] hover:bg-[#0a4c74]">Calculate</button>
+                        <button id="secound-cart-btn" class="mt-3 btn w-[200px]  bg-[#1090D8] hover:bg-[#0a4c74]">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -133,7 +133,7 @@
                     </div>
                   </div>
                   <!-- 5th Cart  -->
-                  <div class="card bg-base-100 shadow-lg bg-[#69C7F0;]">
+                  <div class="card bg-base-100 shadow-lg ">
                     <figure class="px-10 pt-10">
                       <img src="./images/pentagon.png" alt="Pentagon" class="rounded-xl w-full h-[200px]" />
                     </figure>
@@ -142,7 +142,7 @@
                       <p>Area (A) =0.5 &lowast; p &lowast; b</p>
                       <div class="card-actions justify-center">
                         <div class="flex gap-2 ">
-                            <input class="w-[95px] pl-2 rounded-md bg-[#F1F1F1;]" type="text" placeholder="p">
+                            <input id="" class="w-[95px] pl-2 rounded-md bg-[#F1F1F1;]" type="text" placeholder="p">
                             <p>cm</p>
                             <input class="w-[95px] pl-2 rounded-md bg-[#F1F1F1;]" type="text" placeholder="b">
                             <p>cm</p>
@@ -173,15 +173,29 @@
                   </div>
             </div>
             <!-- end cart section -->
-            <div class="w-[30%]">
+            <div class="w-full md:w-[30%] ">
                 <!-- start Calculator -->
                 <h1 class="text-2xl font-bold text-center">Area Calculation</h1>
                 <hr class="border-2 border-black">
-                <div class="added-container">
-
+                <div>
+                    <div class="overflow-x-auto">
+                        <table class="table w-full">
+                          <tbody id="body-container">
+                            <!-- row 1 -->
+                            <!-- <tr>
+                              <th>1</th>
+                              <td>Cy Ganderton</td>
+                              <td>Specialist</td>
+                              <td>Blue</td>
+                            </tr> -->
+                          </tbody>
+                        </table>
+                      </div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="/js/utilitys.js"></script>
+    <script src="/js/file.js"></script>
   </body>
 </html>
