@@ -7,6 +7,9 @@ document
     const firstTriangle = getValueById("triangle-1st-field");
     const secoundTriangle = getValueById("triangle-2nd-field");
     count += 1;
+    if (firstTriangle !== '') {
+      alert('hop')
+    }
     const totala = 0.5 * firstTriangle * secoundTriangle;
     calculateDataArea(count, name, totala);
   });
