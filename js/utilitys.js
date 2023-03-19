@@ -1,6 +1,6 @@
 function getValueById(elementId) {
   const inputField = document.getElementById(elementId);
-  const inputFieldSteing = parseFloat(inputField.value);
+  const inputFieldSteing = inputField.value;
   inputField.value = "";
   return inputFieldSteing;
 }
