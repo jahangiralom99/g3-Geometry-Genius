@@ -8,8 +8,7 @@ document
     const secoundTriangle = getValueById("triangle-2nd-field");
     count += 1;
     const totala = 0.5 * firstTriangle * secoundTriangle;
-    
-    calculateDataArea(count,name, totala, );
+    calculateDataArea(count, name, totala);
   });
 //   2nd btn
 document
@@ -19,10 +18,9 @@ document
     const firstfield = getValueById("rectangle-1st-field");
     const secoundField = getValueById("rectangle-2nd-field");
     count += 1;
-    const total =firstfield * secoundField;
-    
-    calculateDataArea(count,name, total, );
-    document.getElementById('secound-cart-btn').setAttribute('disabled', true)
+    const total = firstfield * secoundField;
+
+    calculateDataArea(count, name, total);
   });
 //   3rd btn
 document
@@ -33,9 +31,8 @@ document
     const secoundField = getValueById("parallelogram-2nd-field");
     count += 1;
     const total = firstfield * secoundField;
-    
-    calculateDataArea(count,name, total, );
-    document.getElementById('third-cart-btn').setAttribute('disabled', true)
+
+    calculateDataArea(count, name, total);
   });
 //   4th btn
 document
@@ -45,10 +42,9 @@ document
     const firstfield = getValueById("rhombus-1st-field");
     const secoundField = getValueById("rhombus-2nd-field");
     count += 1;
-    const total =0.5* firstfield * secoundField;
-    
-    calculateDataArea(count,name, total, );
-    document.getElementById('forth-cart-btn').setAttribute('disabled', true)
+    const total = 0.5 * firstfield * secoundField;
+
+    calculateDataArea(count, name, total);
   });
 //   5th btn
 document
@@ -58,10 +54,9 @@ document
     const firstfield = getValueById("pentagon-1st-field");
     const secoundField = getValueById("pentagon-2nd-field");
     count += 1;
-    const total =0.5* firstfield * secoundField;
-    
-    calculateDataArea(count,name, total, );
-    document.getElementById('fifth-cart-btn').setAttribute('disabled', true)
+    const total = 0.5 * firstfield * secoundField;
+
+    calculateDataArea(count, name, total);
   });
 //   6th cart
 document
@@ -71,10 +66,9 @@ document
     const firstfield = getValueById("ellipse-1st-field");
     const secoundField = getValueById("ellipse-2nd-field");
     count += 1;
-    const totalPI =3.1416* firstfield * secoundField;
-    
-      const total = parseFloat(totalPI.toFixed(2));
-    
-    calculateDataArea(count,name, total, );
-    document.getElementById('sixth-cart-btn').setAttribute('disabled', true)
+    const totalPI = 3.1416 * firstfield * secoundField;
+
+    const total = parseFloat(totalPI.toFixed(2));
+
+    calculateDataArea(count, name, total);
   });
